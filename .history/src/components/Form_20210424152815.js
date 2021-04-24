@@ -2,22 +2,18 @@ import { useCallback, useEffect, useState } from "react";
 import PostList from "./PostList";
 
 function Form() {
-    const [value, setValue] = useState("1");
-    const [userId, setUserId] = useState("1");
+    const [value, setValue] = useState("");
     return (
         <div>
             
-            <input type="text" id="input"
+            <input type="text"
                 onChange={(e) => setValue(e.target.value)}
                 value={value}
             />
             <button onClick={() => {console.log(value);
-                
-                // setValue(document.getElementById(input).value)
-                setUserId(value);}}>Search by user</button>
-
-            <PostList userId = {userId}/>
-
+            
+                setValue("");}}>Search by user</button>
+            <PostList userId = {value}/>
         </div>
     )
 }

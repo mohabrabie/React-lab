@@ -3,7 +3,6 @@ import PostList from "./PostList";
 
 function Form() {
     const [value, setValue] = useState("1");
-    const [userId, setUserId] = useState("1");
     return (
         <div>
             
@@ -14,10 +13,9 @@ function Form() {
             <button onClick={() => {console.log(value);
                 
                 // setValue(document.getElementById(input).value)
-                setUserId(value);}}>Search by user</button>
+                setValue("");}}>Search by user</button>
 
-            <PostList userId = {userId}/>
-
+            <PostList userId = {value}/>
         </div>
     )
 }

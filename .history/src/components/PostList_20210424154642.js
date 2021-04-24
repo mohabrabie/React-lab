@@ -13,11 +13,11 @@ const PostList = (props) => {
             setPosts(data);
             // setLoading(false);
           });
-      }, [setPosts,props.userId]);
+      }, [setPosts]);
     return (
         <div className="postList">
             {posts.map((post)=>(
-                <Post title={post.title} body={post.body} key={post.id}/>
+                <Post title={post.title} body={post.body}/>
             ))}
             
         </div>

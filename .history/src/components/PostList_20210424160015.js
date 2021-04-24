@@ -13,7 +13,7 @@ const PostList = (props) => {
             setPosts(data);
             // setLoading(false);
           });
-      }, [setPosts,props.userId]);
+      }, [setPosts]);
     return (
         <div className="postList">
             {posts.map((post)=>(
