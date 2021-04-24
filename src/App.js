@@ -6,7 +6,6 @@ function App() {
     <div>
     <Header title="blog Application"/>
     
-    <PostList />
     </div>
   );
 }

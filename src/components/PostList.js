@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import Post from './Post'
 
 const PostList = (props) => {
-
+    console.log(props.userId + "from postlist");
     let [posts, setPosts] = useState([]);
     useEffect(() => {
         // setLoading(true);
