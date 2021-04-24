@@ -6,7 +6,7 @@ const PostList = (props) => {
     let [posts, setPosts] = useState([]);
     useEffect(() => {
         // setLoading(true);
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("https://jsonplaceholder.typicode.com/users/1/posts")
           .then((res) => res.json())
           .then((data) => {
             setPosts(data);
