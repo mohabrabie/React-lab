@@ -15,10 +15,7 @@ const PostList = (props) => {
       }, [setPosts]);
     return (
         <div className="postList">
-            {posts.map((post)=>(
-                <Post title={post.title} body={post.body}/>
-            ))}
-            
+            <Post title={posts.title} body={posts.body}/>
         </div>
     )
 }
