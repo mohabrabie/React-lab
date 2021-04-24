@@ -15,7 +15,7 @@ const PostList = (props) => {
       }, [setPosts]);
     return (
         <div className="postList">
-            <Post title={posts.title} body={posts.body}/>
+            <Post title="first post" body="blablablablala"/>
         </div>
     )
 }
