@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
-import PostList from "./PostList";
+import PostList from "./List";
 
-function Form() {
+function Form(props) {
     const [value, setValue] = useState("1");
-    const [userId, setUserId] = useState("1");
+    const showPost= (postId)=>{
+    }
     return (
         <div>
             
@@ -11,13 +12,9 @@ function Form() {
                 onChange={(e) => setValue(e.target.value)}
                 value={value}
             />
-            <button onClick={() => {console.log(value);
-                
-                // setValue(document.getElementById(input).value)
-                setUserId(value);}}>Search by user</button>
-
-            <PostList userId = {userId}/>
-
+            <button onClick={() => {
+                props.handleInput(value)
+                }}>Search by user</button>
         </div>
     )
 }

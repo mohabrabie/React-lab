@@ -7,7 +7,7 @@ const Header = (props) => {
         margin:'10px',
         padding:'10px'}}>
             <h1>{props.title}</h1>
-            <Form />
+            
         </header>
     )
 }
