@@ -1,0 +1,21 @@
+.header{
+    background-color: rgb(97, 93, 163);
+    padding: 16px;
+    border: 1px solid rgb(86, 92, 109);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(45, 102, 85);
+}
+
+.Nav-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
